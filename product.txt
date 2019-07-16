@@ -1,1 +1,12 @@
-dsadasffkfk
+product:[
+{
+"id": 1
+"name": sss
+"value": 10
+},
+{
+"id": 2
+"name": aaa
+"value": 22
+},
+]
