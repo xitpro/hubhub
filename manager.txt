@@ -1,0 +1,31 @@
+employer: [
+  1: {
+	name: dasd,
+	age : 33,
+	position: director,	
+} ,
+  2: {
+	name: tieulongnu,
+	age : 33,
+	position: tale,	
+} ,
+  3: {
+	name: duongwa,
+	age : 25,
+	position: killer,	
+} ,
+]
+employee: [
+ emp1: {
+	id: 1,
+	name: chi,
+},
+ emp2: {
+	id: 2,
+	name: tth,
+},
+ emp3: {
+	id: 3,
+	name: quoc,
+},
+]
