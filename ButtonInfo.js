@@ -2,7 +2,6 @@ import * as ButtonInfo1 from './ButtonInfo1';
 import _ from 'lodash';
 
 const funcList= [
-  // no sona "lskfjdlsdfuosdifjsdlfsidjfl"
   'DEFAULT',
   'KEYBOARD_FUNCTION',
   'MACRO',
@@ -25,12 +24,16 @@ const Pos = 'left';
 const assign = 'KEYBOARD';
 const pageid = '7';
 const scrlock = 'Scroll Lock';
-
+// var i;
+// let buttonList = [];
+// for(i = 0; i< 108; i++){
+//     buttonList[i] = {};
+// }
 export const groupList = [
   {
     group: {
       groupName: 'TOP VIEW',
-      buttonList: [
+      buttonList: [ 
         {
           
         },
@@ -518,12 +521,15 @@ export const groupList = [
   },
 ];
 
-groupList.map((groupItem, inde) => {
+groupList.map((groupItem, index) => {
   groupItem.group.buttonList.forEach((item, idx) =>{
-      var button = ['ESC','F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','PRT_SC','SCR_LK','PAUSE','KEY_TILDE','KEY_1','KEY_2','KEY_3',
-                    'KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_0','KEY_HYPEN','KEY_EQUAL','KEY_BACKSPACE','TAB','KEY_P','KEY_OPEN_BRACKET',
-                    'KEY_CLOSE_BRACKET','KEY_BACKSLASH','KEY_CAPS_LOCK','KEY_A','KEY_S','KEY_D','KEY_F','KEY_G','KEY_H','KEY_J','KEY_K','KEY_L'];
-      var defaultval = [];
+      console.log('Fuck easy json .................', idx)
+      const button = ['ESC','F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','PRT_SC',
+                    'SCR_LK','PAUSE','KEY_TILDE','KEY_1','KEY_2','KEY_3',
+                    'KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_0','KEY_HYPEN','KEY_EQUAL',
+                    'KEY_BACKSPACE','TAB','KEY_Q','KEY_W','KEY_E','KEY_R','KEY_T','KEY_Y','KEY_U','KEY_I','KEY_O','KEY_P',
+                    'KEY_OPEN_BRACKET','KEY_CLOSE_BRACKET','KEY_BACKSLASH','KEY_CAPS_LOCK','KEY_A','KEY_S','KEY_D',
+                    'KEY_F','KEY_G','KEY_H','KEY_J','KEY_K','KEY_L'];
       item.buttonKey = button[idx];
       item.isFocused = focus;
       item.isMapped = mapped;
@@ -533,6 +539,6 @@ groupList.map((groupItem, inde) => {
       item.buttonPos = Pos;
       item.assignment = assign;
       item.pageID = pageid;
-      console.log('Fuck easy json .................', item,idx)
+      console.log('Fuck easy json .................', item)
   })
 })
