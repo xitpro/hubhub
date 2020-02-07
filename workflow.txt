@@ -1,9 +1,20 @@
--- JsTestRzDevice ( protocol using for each device )
--- Device Repo
--- Common repository
+-- Device Repo ( SVG, Config, Images, Icon ... )
+-- Common repository 
+( Functions , Component , 
+Reducer, Actions, Translatetion )
 
--- Razer-Lighting-Engine
+-- Dashboard ( DeviceList PID )
+-- JsTestRzDevice ( protocol using for each device )
+-- Razer-Lighting-Engine ( API handle lighting CustomQuick, ChromaDevice, NonChromaDevice ... )
 -- Razer-app
 
 -- Integrating
-+ ChromaStudio ( SVG, DeviceConfig ) 
++ ChromaStudio ( SVG file, DeviceConfig ) 
+
+-- Deloyment
+ Step 1: Glued device on local 
+ Step 2: Write unit test for actions and reducers
+ Step 3: Check sonarqube rules
+ Step 4: Add PID to dashboard and deployment queue
+ Step 5: Push to staging
+
