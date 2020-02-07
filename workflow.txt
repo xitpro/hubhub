@@ -1,0 +1,9 @@
+-- JsTestRzDevice ( protocol using for each device )
+-- Device Repo
+-- Common repository
+
+-- Razer-Lighting-Engine
+-- Razer-app
+
+-- Integrating
++ ChromaStudio ( SVG, DeviceConfig ) 
