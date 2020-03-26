@@ -1,0 +1,57 @@
+Hi All,
+
+Please find below the new steps to install Anne.
+
+Anne Repositories
+Proxy - https://bitbucket.org/razersw/razer-proxy/src/master/
+Backend - https://bitbucket.org/razersw/jstestrzdevice/src/dev/
+Common - https://bitbucket.org/razersw/commonrepository/src/master/
+Login - https://bitbucket.org/razersw/loginrepository/src/master/
+Dashboard - https://bitbucket.org/razersw/dashboard/src/master/
+Jamie T1 - https://bitbucket.org/razersw/jamiet1/src/master/
+Lanchead - https://bitbucket.org/razersw/lancehead/src/master/
+Hope T1 - https://bitbucket.org/razersw/hopet1/src/master/
+Razer Lighting Engine -https://bitbucket.org/razersw/razer-lighting-engine/src/staging/
+Settings - https://bitbucket.org/razersw/settings/src/master/
+
+Steps to install and run
+
+ Get access to http://lab61.razerdev.com/ and install RzAppEngine_installer_1.12.0.0_developer.exe. Install it from command window with the command ‘rzappengine --system-level’.
+ After installation, create shortcut to desktop and in the properties add “http://localhost:5000/dashboard/” (or staging server url or your localhost endpoint) at the end.
+ Take latest of each repo with mentioned branch.
+ Run npm install at each project.
+ Execute CopyLibFiles.bat in Common repository.
+ Execute CopyLoginRepo.bat and CopyCommonFiles.bat in dashboard and each of the projects(devices & settings).
+ Change the environment variable ‘REACT_APP_HOST_URL´ to 'http://localhost:5000' in .env file in dashboard project.
+ Build each project separately with the command ‘npm run build’.
+ Create a folder client in razer-proxy project. We need to copy the build files from each project in this folder.
+ Structure to copy build files should be like the below image
+
+ Go to server.js in the proxy project and add the following
+app.use(
+'/dashboard',
+express.static(path.join(__dirname, 'client', 'dashboard'), {
+maxAge: '1y',
+})
+);
+app.use(
+'/products/89',
+express.static(path.join(__dirname, 'client', 'products', '89'), {
+maxAge: '1y',
+})
+);
+
+ Add similar nodes for each project build that is added to the client folder(for other devices, settings, lighting-engine).
+ Run the proxy using npm run server(This will run the server at port 5000)
+ Launch the Anne icon from desktop. This will launch http://localhost:5000/dashboard/ and each connected devices will be added in new tab with address http://localhost/products/pid.
+ Devices cannot be started as stand alone as login and launch is controlled by dashboard. Dashboard is responsible for providing login details and fetch active profile for each connected device. The device tab will be loaded with the loaded active profile details.
+ When we make some changes to the project, the following steps are needed:
+ Build the project(npm run build)
+ Copy the build files to respective location in proxy project(inside client folder)
+ Go to Razer App, update the corresponding service worker(can be opened inside tools->Application->Service Workers)
+ Exit and relaunch the App.
+
+Let me know if you need any other info.
+
+Regards,
+Harikumaran.

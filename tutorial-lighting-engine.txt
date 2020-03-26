@@ -1,0 +1,17 @@
+Hi all
+
+Breaking changes for Lighting Engine
+
+- Added a new additional data required, "config" for APIs .applyQuickCustomEffects and .addChromaDevice, please check the docs below
+
+https://razersw.atlassian.net/wiki/spaces/ANNE/pages/561741904/Lighting+Engine+Hidden+Window+Integration
+
+https://razersw.atlassian.net/wiki/spaces/ANNE/pages/563118781/Chroma+Studio+Integration
+
+
+This change has been introduced to have the LedData passed by each specific device instead of the Lighting Engine looking through the System32, and also to support dynamic config change by Nanoleaf
+
+Changes have been deployed to staging and will break lighting effects for each devices
+Get all latest codes of the following below, also npm install latest jstestrzdevice (rzdevicelib) v0.0.36 for both repos
+Chroma Studio v0.0.149
+Lighting Engine v0.0.66

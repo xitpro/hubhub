@@ -1,0 +1,18 @@
+{
+  "Version": 2,
+  "VID": 5426,
+  "PID": 771,
+  "EID": 0,
+  "Layout": 0,
+  "MatrixMaxRow": 8,
+  "MatrixMaxCol": 8,
+  "DeviceMaxRow": 1,
+  "DeviceMaxCol": 64,
+  "LedWidth": 80,
+  "LedHeight": 80,
+  "LedWidthOffset": 0,
+  "LedHeightOffset": 0,
+  "MaxRegion": 0,
+  "RegionMaxRow": 0,
+  "RegionMaxCol": 0
+}

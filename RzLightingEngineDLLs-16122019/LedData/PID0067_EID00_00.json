@@ -1,0 +1,76 @@
+{
+  "Version": 2,
+  "VID": 5426,
+  "PID": 103,
+  "EID": 0,
+  "Layout": 0,
+  "MatrixMaxRow": 7,
+  "MatrixMaxCol": 5,
+  "DeviceMaxRow": 1,
+  "DeviceMaxCol": 3,
+  "LedWidth": 0,
+  "LedHeight": 0,
+  "LedWidthOffset": 0,
+  "LedHeightOffset": 0,
+  "MaxRegion": 0,
+  "RegionMaxRow": 0,
+  "RegionMaxCol": 0,
+  "LedMatrix": [
+    { "MatrixPos": [0, 2], "DevicePos": [0, 0] },
+    { "MatrixPos": [3, 0], "DevicePos": [0, 2] },
+    { "MatrixPos": [6, 2], "DevicePos": [0, 1] }
+  ],
+  "LedRegion": [
+    {
+      "RegionId": 4,
+      "NumLed": 1,
+      "MaxRow": 1,
+      "MaxCol": 1,
+      "RegionMatrix": [{ "MatrixPos": [6, 2] }]
+    },
+    {
+      "RegionId": 1,
+      "NumLed": 1,
+      "MaxRow": 1,
+      "MaxCol": 1,
+      "RegionMatrix": [{ "MatrixPos": [0, 2] }]
+    },
+    {
+      "RegionId": 17,
+      "NumLed": 1,
+      "MaxRow": 1,
+      "MaxCol": 1,
+      "RegionMatrix": [{ "MatrixPos": [3, 0] }]
+    }
+  ],
+  "LedInputMap": [
+    { "InputType": "dkm", "InputData": [33, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [1, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [2, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [3, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [4, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [5, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [6, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [7, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [32, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [2, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [3, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [4, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [5, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [6, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [7, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [8, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [2, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [3, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [4, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [5, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [6, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [7, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [8, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [9, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [10, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [11, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [12, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "kbd", "InputData": [13, 0], "MatrixPos": [65535, 65535] }
+  ]
+}

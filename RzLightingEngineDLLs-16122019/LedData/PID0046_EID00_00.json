@@ -1,0 +1,85 @@
+{
+  "Version": 2,
+  "VID": 5426,
+  "PID": 70,
+  "EID": 0,
+  "Layout": 0,
+  "MatrixMaxRow": 7,
+  "MatrixMaxCol": 5,
+  "DeviceMaxRow": 1,
+  "DeviceMaxCol": 16,
+  "LedWidth": 0,
+  "LedHeight": 0,
+  "LedWidthOffset": 0,
+  "LedHeightOffset": 0,
+  "MaxRegion": 0,
+  "RegionMaxRow": 0,
+  "RegionMaxCol": 0,
+  "LedMatrix": [
+    { "MatrixPos": [0, 0], "DevicePos": [0, 0] },
+    { "MatrixPos": [0, 2], "DevicePos": [0, 15] },
+    { "MatrixPos": [0, 4], "DevicePos": [0, 7] },
+    { "MatrixPos": [1, 0], "DevicePos": [0, 1] },
+    { "MatrixPos": [1, 4], "DevicePos": [0, 8] },
+    { "MatrixPos": [2, 0], "DevicePos": [0, 2] },
+    { "MatrixPos": [2, 4], "DevicePos": [0, 9] },
+    { "MatrixPos": [3, 0], "DevicePos": [0, 3] },
+    { "MatrixPos": [3, 4], "DevicePos": [0, 10] },
+    { "MatrixPos": [4, 0], "DevicePos": [0, 4] },
+    { "MatrixPos": [4, 2], "DevicePos": [0, 14] },
+    { "MatrixPos": [4, 4], "DevicePos": [0, 11] },
+    { "MatrixPos": [5, 0], "DevicePos": [0, 5] },
+    { "MatrixPos": [5, 4], "DevicePos": [0, 12] },
+    { "MatrixPos": [6, 0], "DevicePos": [0, 6] },
+    { "MatrixPos": [6, 4], "DevicePos": [0, 13] }
+  ],
+  "LedRegion": [
+    {
+      "RegionId": 1,
+      "NumLed": 1,
+      "MaxRow": 1,
+      "MaxCol": 1,
+      "RegionMatrix": [{ "MatrixPos": [0, 2] }]
+    },
+    {
+      "RegionId": 4,
+      "NumLed": 1,
+      "MaxRow": 1,
+      "MaxCol": 1,
+      "RegionMatrix": [{ "MatrixPos": [4, 2] }]
+    },
+    {
+      "RegionId": 11,
+      "NumLed": 14,
+      "MaxRow": 1,
+      "MaxCol": 14,
+      "RegionMatrix": [
+        { "MatrixPos": [0, 0] },
+        { "MatrixPos": [1, 0] },
+        { "MatrixPos": [2, 0] },
+        { "MatrixPos": [3, 0] },
+        { "MatrixPos": [4, 0] },
+        { "MatrixPos": [5, 0] },
+        { "MatrixPos": [6, 0] },
+        { "MatrixPos": [6, 4] },
+        { "MatrixPos": [5, 4] },
+        { "MatrixPos": [4, 4] },
+        { "MatrixPos": [3, 4] },
+        { "MatrixPos": [2, 4] },
+        { "MatrixPos": [1, 4] },
+        { "MatrixPos": [0, 4] }
+      ]
+    }
+  ],
+  "LedInputMap": [
+    { "InputType": "dkm", "InputData": [35, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [1, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [2, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [3, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [4, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "mou", "InputData": [5, 0], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [32, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [33, 16], "MatrixPos": [65535, 65535] },
+    { "InputType": "dkm", "InputData": [34, 16], "MatrixPos": [65535, 65535] }
+  ]
+}

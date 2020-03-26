@@ -1,0 +1,56 @@
+-----Class LightingSystemrenderEffects = () => {
+    let currentValue;
+    let {
+        brightnessPlugged,
+        brightnessBattery,
+        brightnessTwoMode,
+      } = this.state.brightness,
+      isBrightnessEnable;
+    switch (this.state.input) {
+      case 'plugged':
+        isBrightnessEnable = brightnessPlugged.isEnabled;
+        currentValue = brightnessPlugged.value;
+        break;
+      case 'battery':
+        isBrightnessEnable = brightnessBattery.isEnabled;
+        currentValue = brightnessBattery.value;
+        break;
+      case 'linked':
+        isBrightnessEnable = brightnessTwoMode.isEnabled;
+        currentValue = brightnessTwoMode.value;
+        break;
+      default:
+        isBrightnessEnable = false;
+        break;
+    }
+
+    this.props.setToggleBrightnessStatus(isBrightnessEnable);
+    return (
+      <BodyWidget
+        title={translationTypes.BRIGHTNESS_HEADER}
+        hasSwitch={true}
+        toggleSwitch={this.toggleBrightness}
+        active={isBrightnessEnable}
+      >
+        {this.modeSlider()}
+        {isBrightnessEnable === true && currentValue >= 80 ? (
+          <div
+            style={{
+              fontSize: '15px',
+              color: '#ff0000',
+              textAlign: 'right',
+            }}
+          >
+            <Translator text={translationTypes.LIGHTING_WARNING} />
+          </div>
+        ) : null}
+      </BodyWidget>
+    );
+  };
+
+----Translation en 
+LIGHTING_WARNING: '*This setting may reduce battery life',
+
+
+----Common Translation Types
+export const LIGHTING_WARNING = 'LIGHTING_WARNING';

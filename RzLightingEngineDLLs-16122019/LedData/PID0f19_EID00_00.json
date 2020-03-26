@@ -1,0 +1,34 @@
+{
+  "Version": 2,
+  "VID": 5426,
+  "PID": 3865,
+  "EID": 0,
+  "Layout": 0,
+  "MatrixMaxRow": 2,
+  "MatrixMaxCol": 2,
+  "DeviceMaxRow": 1,
+  "DeviceMaxCol": 4,
+  "LedWidth": 240,
+  "LedHeight": 240,
+  "LedWidthOffset": 0,
+  "LedHeightOffset": 0,
+  "MaxRegion": 0,
+  "RegionMaxRow": 0,
+  "RegionMaxCol": 0,
+  "LedMatrix": [
+    { "MatrixPos": [0, 0], "DevicePos": [0, 2] },
+    { "MatrixPos": [0, 1], "DevicePos": [0, 3] },
+    { "MatrixPos": [1, 0], "DevicePos": [0, 0] },
+    { "MatrixPos": [1, 1], "DevicePos": [0, 1] }
+  ],
+  "LedRegion": [
+    {
+      "RegionId": 4,
+      "NumLed": 2,
+      "MaxRow": 1,
+      "MaxCol": 2,
+      "RegionMatrix": [{ "MatrixPos": [1, 0] }, { "MatrixPos": [1, 1] }]
+    }
+  ],
+  "LedInputMap": []
+}

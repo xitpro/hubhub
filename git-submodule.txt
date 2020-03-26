@@ -1,0 +1,28 @@
+1. npm uninstall razer-app
+2. create a folder submodules in the root folder
+3. git submodule add git@bitbucket.org:razersw/razer-app.git submodules/razer-app
+4. git config -f .gitmodules submodule.submodules/razer-app.branch staging
+5. git submodule update --remote
+6. add "razer-app": "file:submodules/razer-app", to package.json
+
+
+For staging ^
+
+After doing the steps above for staging branch
+
+When merge staging code to master and call this
+
+git config -f .gitmodules submodule.submodules/razer-app.branch master
+
+and commit directly to master
+
+
+------------
+git checkout master
+git merge --no-log --no-ff --no-commit branch
+
+git checkout master filename
+git add filename
+git commit -a
+
+git push origin master "
