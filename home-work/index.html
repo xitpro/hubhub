@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="functions.js"></script>
+    <title>Foody Store</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul id="nav">
+       
+        <li><a onclick="onChange()" href="/index.html">Home</a></li>
+        <li><a onclick="writeDocument()" href="/food.html">News</a></li>
+        <li ><a onclick="changeDiv()" href="#" >Hot</a></li>
+        <!-- <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="#">Food</a>
+            <a href="#">Drink</a>
+            <a href="#">Girl</a>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <div class="slideshow-container">
+      <!-- mySlides fade -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="vyvy2.jpg" style="width: 1000px; height: 450px;" alt="image1">
+        <div class="text">Image 1</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="vyvy.jpg" style="width: 1000px; height: 450px;" alt="image2">
+        <div class="text">Image 2</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="vyvy1.jpg" style="width: 1000px; height: 450px;" alt="image3">
+        <div class="text">Image 3</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+    <div id="demo">ABC</div>
+    <!-- <div class="content-container" id="demo">
+      <div id="page-1" >Page 1</div>
+      <div id="page-2" >Page 2</div>
+      <div id="page-3" >Page 3</div>
+    </div> -->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    
+  <script>
+
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+// showSlides(slideIndex);
+    
+//     function plusSlides(n) {
+//       showSlides(slideIndex += n);
+//     }
+    
+//     function currentSlide(n) {
+//       showSlides(slideIndex = n);
+//     }
+    
+//     function showSlides(n) {
+//       var i;
+//       var slides = document.getElementsByClassName("mySlides");
+//       var dots = document.getElementsByClassName("dot");
+//       if (n > slides.length) {slideIndex = 1}    
+//       if (n < 1) {slideIndex = slides.length}
+//       for (i = 0; i < slides.length; i++) {
+//           slides[i].style.display = "none";  
+//       }
+//       for (i = 0; i < dots.length; i++) {
+//           dots[i].className = dots[i].className.replace(" active", "");
+//       }
+//       slides[slideIndex-1].style.display = "block";  
+//       dots[slideIndex-1].className += " active";
+//     } 
+  </script>
+</body>
+
+</html>
