@@ -12,9 +12,9 @@
     <div class="navbar">
       <ul id="nav">
        
-        <li><a onclick="onChange()" href="/index.html">Home</a></li>
-        <li><a onclick="writeDocument()" href="/food.html">News</a></li>
-        <li ><a onclick="changeDiv()" href="#" >Hot</a></li>
+        <li><a onclick="populateData(event)" id="A"  href="#">Home</a></li>
+        <li><a onclick="populateData(event)" id="B"  href="#">News</a></li>
+        <li ><a onclick="populateData(event)" id="C" href="#" >Hot</a></li>
         <!-- <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">Menu</a>
           <div class="dropdown-content">
@@ -57,12 +57,13 @@
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
 
-    <div id="demo">ABC</div>
-    <!-- <div class="content-container" id="demo">
-      <div id="page-1" >Page 1</div>
+    <div class="content-container" id="demo">
+      <div id="page-1" >
+        <img id="img1" src="vyvy.jpg">
+      </div>
       <div id="page-2" >Page 2</div>
       <div id="page-3" >Page 3</div>
-    </div> -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
